@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252525"
+        android:orientation="vertical"
+        tools:context="com.example.mangotech2.a123ngo.VehicleDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="2dp"
+        android:background="@drawable/gradient">
+        <ImageView
+            android:id="@+id/btnvehicledetailtback"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:translationZ="5dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:text="Vehicle Details" />
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textVe9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="Vehicle Name" />
+            <EditText
+                android:id="@+id/etvehiclename"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:hint="Corolla"
+                android:inputType="text"
+                android:autofillHints="t"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textVe99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="Registration Number" />
+            <EditText
+                android:id="@+id/etregistrationnumber"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="abc-0000"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="Vehicle Model" />
+            <EditText
+                android:id="@+id/etvehiclemodel"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="2018"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="Vehicle Color" />
+            <EditText
+                android:id="@+id/etvehiclecolor"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:hint="White"
+                android:ems="10"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#5A5858"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:alpha="0.9"
+            android:scrollbars="none"
+            android:translationZ="2dp">
+
+            <LinearLayout
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#5A5858"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btndriverbike"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/final_bike"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btndriverauto"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/final_auto"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btndrivergoplus"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gocar"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btndrivergox"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/fianl_go">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btndriverbusiness"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/final_business"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/btndrivertaxi"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/final_taxi"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btndriverbus"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/final_bus" >
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnvehiclenext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="@drawable/btnshape"
+                android:text="Next"
+                android:onClick="btnnext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#0F91FC"
+                android:textSize="18sp"
+                android:text="For Help, Call 03123456789" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+    </LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mangotech2.a123ngo.HomeMain"
+    tools:showIn="@layout/app_bar_home_main">
+
+
+    <!--  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+      -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtcurrloc"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="30dp"
+            android:alpha="0.8"
+            android:background="@drawable/txtshape"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Current Location "
+            android:textColor="#8c8b8b"
+            android:textSize="18sp"
+            />
+    <!-- ICON -->
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/username_icon"
+        android:src="@drawable/final_green"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="85dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/final_btnnext"
+            android:onClick="btnnextclick"
+            android:text="@string/next"
+            android:textColor="#f5f6f4" />
+
+
+    </LinearLayout>
+
+    <!--  <com.google.android.gms.maps.MapView
+
+           android:id="@+id/map"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="-50dip" />
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginTop="-50dip"
+           android:name="com.google.android.gms.maps.SupportMapFragment"
+           android:id="@+id/mapwhere" />
+   -->
+</LinearLayout>

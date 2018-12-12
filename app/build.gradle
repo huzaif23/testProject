@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'io.fabric'
+android {
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        config {
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.mangotech2.a123ngo"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //    shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Retrofit
+
+// JSON Parsing
+    compile files('src/main/java/ftp4j-1.6.jar')
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.redbooth:WelcomeCoordinator:1.0.1'
+    compile 'com.github.kittinunf.fuel:fuel-android:1.4.0'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile 'com.ramotion.foldingcell:folding-cell:1.1.0'
+    compile 'it.neokree:MaterialTabs:0.11'
+    compile 'com.google.maps.android:android-maps-utils:0.4.+'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.apache.commons:commons-collections4:4.1'
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'commons-net:commons-net:3.6'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.google.code.gson:gson:2.6.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.google.firebase:firebase-crash:11.0.4'
+    compile 'com.google.firebase:firebase-perf:11.0.4'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.github.citux:datetimepicker:0.2.0'
+    //SwipyRefreshLayout
+    compile 'com.github.omadahealth:swipy:1.2.3@aar'
+    //SwipyRefreshLayout
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="1dp"
+        android:background="#D4D6D6"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#D4D6D6">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bike"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/rickshaw"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/scar"
+                android:scaleType="fitXY"/>
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/carlogo"
+                android:scaleType="fitXY"
+            />
+            <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/luxurycar"
+            android:scaleType="fitXY"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+  <!--  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+    -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:background="#d9dbdb"
+        android:orientation="horizontal"
+        android:translationZ="1dp">
+
+
+        <TextView
+            android:id="@+id/txtcurrloc"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="7"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="Current Location "
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:translationZ="2dp"
+            app:srcCompat="@drawable/search"
+            android:onClick="btnsearchclick"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/next"
+            android:onClick="btnnextclick"
+            />
+
+    </LinearLayout>
+
+
+    <!--  <com.google.android.gms.maps.MapView
+
+           android:id="@+id/map"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="-50dip" />
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginTop="-50dip"
+           android:name="com.google.android.gms.maps.SupportMapFragment"
+           android:id="@+id/mapwhere" />
+   -->
+</LinearLayout>

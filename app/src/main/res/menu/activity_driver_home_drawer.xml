@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_MyTrips"
+            android:icon="@drawable/taxi"
+            android:title="Driver Trips" />
+        <item
+            android:id="@+id/nav_MyProfile"
+            android:icon="@drawable/user"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_Language"
+            android:icon="@drawable/worlwide"
+            android:title="Language" />
+       <!--- <item
+            android:id="@+id/nav_Report"
+            android:icon="@drawable/report"
+            android:title="Report" />
+       -->
+        <item
+            android:id="@+id/nav_Contactus"
+            android:icon="@drawable/smartphone"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/nav_Subscription"
+            android:icon="@drawable/subscription"
+            android:title="My Subscription" />
+        <item
+            android:id="@+id/nav_Rates"
+            android:icon="@drawable/dollar"
+            android:title="Rates" />
+        <item
+            android:id="@+id/nav_Help"
+            android:icon="@drawable/info"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/logout"
+            android:title="@string/drawer_sign_out" />
+
+    </group>
+
+
+</menu>

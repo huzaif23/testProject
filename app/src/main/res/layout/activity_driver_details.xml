@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context="com.example.mangotech2.a123ngo.DriverDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom"
+            android:textColor="#0F91FC"
+            android:textSize="28sp"
+            android:text="Driver Details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textVew9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:text="Select Country"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spncountry"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="42dp"
+            android:background="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textVe9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="City" />
+        <EditText
+            android:id="@+id/etcity"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:background="@drawable/txtshape"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:autofillHints="t"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textVe99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="Address" />
+            <EditText
+                android:id="@+id/etaddress"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="Address"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="CNIC" />
+            <EditText
+                android:id="@+id/etcnic"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="1112223333"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="License No." />
+            <EditText
+                android:id="@+id/etlicenseno"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="22233334444"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:text="Driver Image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/btndriverimg"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="42dp"
+            android:textColor="#000"
+            android:background="@drawable/txtshape"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/upload"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:text="Image Upload"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/btnshape"
+            android:text="Next"
+            android:onClick="btnnext"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#0F91FC"
+            android:textSize="18sp"
+            android:text="For Help, Call 03123456789" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mangotech2.a123ngo.RideLater">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="2dp"
+        android:background="@drawable/gradient">
+        <ImageView
+            android:id="@+id/btnback"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:translationZ="5dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Select Date"
+            android:gravity="center"
+            android:translationZ="2dp"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <DatePicker
+            android:id="@+id/dpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_marginTop="-20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Select Time"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:translationZ="2dp"
+            android:textSize="24sp"
+            android:layout_height="40dp" />
+
+        <TimePicker
+            android:id="@+id/tpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/btnsavetrip"
+            android:layout_width="match_parent"
+            android:textColor="#EBEBEB"
+            android:background="@drawable/final_btnnext"
+            android:layout_height="50dp"
+            android:text="@string/save_trip"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="-30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

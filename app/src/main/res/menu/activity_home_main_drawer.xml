@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/home"
+            android:title="@string/drawer_home" />
+        <item
+            android:id="@+id/nav_MyTrips"
+            android:icon="@drawable/taxi"
+            android:title="@string/drawer_my_trips" />
+        <item
+            android:id="@+id/nav_MyProfile"
+            android:icon="@drawable/user"
+            android:title="@string/drawer_my_profile" />
+        <item
+            android:id="@+id/nav_GetFREERides"
+            android:icon="@drawable/gift"
+            android:title="@string/drawer_get_free_rides" />
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/settings"
+            android:title="@string/drawer_settings" />
+       <item
+            android:id="@+id/nav_Language"
+            android:icon="@drawable/worlwide"
+            android:title="@string/drawer_language" />
+        <item
+            android:id="@+id/nav_Contactus"
+            android:icon="@drawable/smartphone"
+            android:title="@string/drawer_contact_us" />
+        <item
+            android:id="@+id/nav_Rates"
+            android:icon="@drawable/dollar"
+            android:title="@string/drawer_rates" />
+        <item
+            android:id="@+id/nav_DrivethroughUs"
+            android:icon="@drawable/drive"
+            android:title="@string/drawer_drive_with_us"/>
+        <item
+            android:id="@+id/nav_Help"
+            android:icon="@drawable/info"
+            android:title="@string/drawer_help" />
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/logout"
+            android:title="@string/drawer_sign_out" />
+
+    </group>
+
+
+    <!--
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+    -->
+</menu>

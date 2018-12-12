@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mangotech2.a123ngo.Splash"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="What can we help you with?*"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner01"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tell us what happened*"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.46"
+        android:gravity="top"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter detail for your request. A member of our support staff will respond as soon as possible."
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="0dp"
+        android:layout_marginRight="15dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attach an image" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Upload limit:3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_button_2"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#EBEBEB"
+        android:background="#000000"
+        android:layout_marginBottom="-8dp"
+        android:layout_weight="0.23"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/camerawhite" />
+
+        <TextView
+            android:id="@+id/image_button_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image here"
+            android:textColor="#EBEBEB"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_button_3"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#EBEBEB"
+        android:layout_marginBottom="-8dp"
+        android:background="#000000"
+        android:layout_weight="0.23"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/image_button_3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#EBEBEB"/>
+    </LinearLayout>
+</LinearLayout>

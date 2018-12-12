@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#252525">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="7">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src ="@drawable/userwhite"/>
+            <TextView
+                android:id="@+id/tvusertripstatus"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Status"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvusertripdate"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Date Time"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvusertripprice"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Rs 250"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="PickUp"
+                android:textColor="#5053f4"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/placeholder"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvusertrippickuploc"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"
+                android:text="61/8 Block 6 Model Colony Karachi "
+                android:layout_gravity="center"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Drop Off"
+                android:textColor="#ed3d3d"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/placeholderred"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvusertripdropoffloc"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"
+                android:text="North nazimabad block 3 Karachi"
+                android:layout_gravity="center"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

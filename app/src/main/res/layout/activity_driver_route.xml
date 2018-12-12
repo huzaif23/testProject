@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    tools:context="com.example.mangotech2.a123ngo.DriverRoute">
+
+
+    <!--  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+      -->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Status\nOnmyway"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+        android:background="@drawable/gradient"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtpassengername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Estimated time of arrival"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+<!--
+        <view
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#1d1d1d"/>
+    -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.EditText"
+                    android:id="@+id/txtpassengercontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/gradient"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="7m20s"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:background="#CD3239"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Customer Will Pay In Cash"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+
+    </FrameLayout>
+
+    <!--  <com.google.android.gms.maps.MapView
+
+           android:id="@+id/map"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="-50dip" />
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginTop="-50dip"
+           android:name="com.google.android.gms.maps.SupportMapFragment"
+           android:id="@+id/mapwhere" />
+   -->
+
+
+
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-105dp"
+        android:background="@drawable/txtshape"
+        android:orientation="vertical"
+        android:translationZ="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Customer"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="IBA University - Maskan - Karachi"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/txtshape"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/final_up"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+-->
+
+    <LinearLayout
+        android:id="@+id/layoutridestart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="-50dp"
+        android:translationZ="2dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Ride Start"
+            android:textColor="#EBEBEB"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_now"
+            android:onClick="btnRideStart"
+            android:id="@+id/btnRideStart" />
+
+        <!--  <View
+              android:id="@+id/view"
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:background="#000000" />
+  -->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#EBEBEB"
+            android:background="@drawable/btn_later"
+            android:id="@+id/btnCancelBookinfFromDriver" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutgoforpickup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:weightSum="3"
+        android:visibility="visible"
+        android:layout_marginTop="-50dp"
+        android:translationZ="4dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Go For PickUp"
+            android:textColor="#EBEBEB"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_now"
+            android:onClick="btnRideStart"
+            android:id="@+id/btnGoforpickup" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutreached"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:weightSum="3"
+        android:visibility="visible"
+        android:layout_marginTop="-50dp"
+        android:translationZ="3dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Reached"
+            android:textColor="#EBEBEB"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_now"
+            android:onClick="btnRideStart"
+            android:id="@+id/btnreached" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mangotech2.a123ngo.mapdirection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+
+  <!--  <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/etDestination"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="PickUp Location"/>
+-->
+    <!--
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter pickup location"
+            android:completionThreshold="2"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="2"
+            android:hint="Where to?"
+            android:id="@+id/etDestination"/>
+
+    -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:translationZ="2dp"
+            android:background="@drawable/gradient">
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:translationZ="5dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/backbutton"
+                android:layout_marginTop="8dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    />
+        </LinearLayout>
+<fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/etPickup"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="20dp"
+            android:alpha="0.8"
+            android:background="@drawable/txtshape"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Pick Up"
+            android:textColor="#8c8b8b"
+            android:textSize="18sp"
+            />
+        <!-- ICON -->
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/username_icon"
+            android:src="@drawable/final_green"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="75dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/etOrigin"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="115dp"
+            android:paddingLeft="20dp"
+            android:alpha="0.8"
+            android:background="@drawable/txtshape"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Where To? "
+            android:textColor="#8c8b8b"
+            android:textSize="18sp"
+            />
+        <!-- ICON -->
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/final_red"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="130dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="2dp"
+            android:weightSum="2"
+            android:translationZ="3dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/go_now"
+                android:textColor="#EBEBEB"
+                android:background="@drawable/btn_now"
+
+                android:id="@+id/btnRideNow" />
+
+            <!--  <View
+                  android:id="@+id/view"
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center"
+                  android:background="#000000" />
+      -->
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/go_later"
+                android:textColor="#EBEBEB"
+                android:background="@drawable/btn_later"
+
+                android:id="@+id/btnRideLater" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/panelfare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-171dp"
+        android:background="#5A5858"
+        android:alpha="0.9"
+        android:orientation="vertical"
+        android:translationZ="2dp">
+    <HorizontalScrollView
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#5A5858"
+        android:alpha="0.9"
+        android:scrollbars="none"
+        android:translationZ="2dp">
+
+        <LinearLayout
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#5A5858"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnbike"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/final_bike"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnauto"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/final_auto"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btngoplus"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/gocar"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btngox"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:background="@drawable/fianl_go">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnbusiness"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/final_business"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/btntaxi"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/final_taxi"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnbus"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:background="@drawable/final_bus" >
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+        <LinearLayout
+            android:id="@+id/showfare"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:weightSum="6"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center"
+    android:scaleType="fitXY"
+    android:layout_weight="1"
+    android:src="@drawable/taxiwhite"
+    android:foregroundGravity="center"/>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="5"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:textSize="18sp"
+        android:textColor="#dad7d7"
+        android:text="@string/fare_estimate"/>
+    <TextView
+        android:id="@+id/tvfareestimate"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:textSize="16sp"
+        android:textColor="#dad7d7"
+        android:text="Please Wait"/>
+</LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnpromo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:weightSum="6"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:src="@drawable/taxiwhite"
+                    android:foregroundGravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="#dad7d7"
+                        android:text="@string/promo_code"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        android:textColor="#082159"
+        android:translationZ="2dp">
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Drop Off Fare Estimate"
+            android:textColor="#082159"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_distance" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="0 km"
+            android:textColor="#082159" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="0 min"
+            android:textColor="#082159" />
+    </LinearLayout>
+
+
+</LinearLayout>

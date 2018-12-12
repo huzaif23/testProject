@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    tools:context="com.example.mangotech2.a123ngo.DriverSubscription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationZ="2dp"
+        android:background="@drawable/gradient">
+        <ImageView
+            android:id="@+id/btnsubscriptionback"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:translationZ="5dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:text="My Subscription" />
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:text="Bank Slip"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/btnsubscriptionbankslip"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="42dp"
+
+            android:textColor="#000"
+            android:background="@drawable/txtshape"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/upload"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:text="Image Upload"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="Amount"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/etsubscriptionamount"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="0"
+                android:background="@drawable/txtshape"
+                android:textSize="20sp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsubscriptionsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnshape"
+            android:text="Submit"/>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

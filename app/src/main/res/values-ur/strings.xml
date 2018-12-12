@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">جاؤ</string>
+    <string name="BugMailId">sameer71095@gmail.com</string>
+    <string name="Reg">رجسٹریشن</string>
+    <string name="action_settings">ترتیبات</string>
+    <string name="navigation_drawer_close">سمت شناسی</string>
+    <string name="navigation_drawer_open">کھولیں نیویگیشن دراج</string>
+    <string name="title_activity_driver_home">ڈرائیور ہوم</string>
+    <string name="title_activity_home">ہوم</string>
+    <string name="title_activity_home_main">ہوم</string>
+    <string name="veremail">ای میل اڈریس</string>
+    <string name="sign_up">سائن اپ</string>
+    <string name="sign_in">داخلہ</string>
+    <string name="vercode">آپ کے ای میل ایڈریس پر 4 عددی تصدیقی کوڈ بھیجا</string>
+    <string name="forgot_pin">PIN بھول گئے؟</string>
+    <string name="enter_password">پاس ورڈ درج کریں</string>
+    <string name="enter_phone_number">فون نمبر درج کریں</string>
+    <string name="for_help_call_03123456789">مدد کے لئے، 03128641061 کو کال کریں</string>
+    <string name="drawer_contact_us">ہم سے رابطہ کریں</string>
+    <string name="drawer_drive_with_us">ہمارے ساتھ ڈرائیو</string>
+    <string name="drawer_get_free_rides">مفت سواری حاصل کریں</string>
+    <string name="drawer_help">مدد</string>
+    <string name="drawer_language">زبان</string>
+    <string name="drawer_my_profile">میری پروفائل</string>
+    <string name="drawer_my_trips">میرا سفر</string>
+    <string name="drawer_rates">قیمتیں</string>
+    <string name="drawer_settings">ترتیبات</string>
+    <string name="drawer_sign_out">باہر جائیں</string>
+    <string name="drawer_home">ہوم</string>
+    <string name="next">اگلے</string>
+    <string name="fare_estimate">فیس بک کا اندازہ</string>
+    <string name="go_later">بعد میں جاؤ</string>
+    <string name="go_now">ابھی جائیں</string>
+    <string name="promo_code">پرومو کوڈ</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="enter_code">کوڈ درج کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="call_us">ہمیں بلائیں</string>
+    <string name="change_password">پاس ورڈ تبدیل کریں</string>
+    <string name="contact_us">ہم سے رابطہ کریں!</string>
+    <string name="current_password">موجودہ خفیہ لفظ</string>
+    <string name="email_us">ہمیں ای میل کریں</string>
+    <string name="new_password">نیا پاس ورڈ</string>
+    <string name="re_type_new_password">نیا پاس ورڈ دوبارہ ٹائپ کریں</string>
+    <string name="make_busy">بس کرو</string>
+    <string name="save_trip">سفر کو بچاؤ</string>
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_number_arrays">
+        <item>+92</item>
+    </string-array>
+    <string-array name="report">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Custom</item>
+    </string-array>
+</resources>

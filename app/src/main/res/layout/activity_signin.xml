@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context="com.example.mangotech2.a123ngo.Signin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom"
+            android:textColor="#0F91FC"
+            android:textSize="28sp"
+            android:text="@string/sign_in" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textVew9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="@string/enter_phone_number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Spinner
+                android:id="@+id/spncountrycode"
+                android:layout_width="0dp"
+                android:ems="10"
+                android:layout_weight="2"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:background="@drawable/mobiledropshape"
+                android:textSize="20sp"
+                android:spinnerMode="dropdown"
+                android:layout_height="44dp"
+                android:entries="@array/country_number_arrays"
+                android:prompt="@string/country_prompt" />
+
+        <EditText
+            android:id="@+id/etphone"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="3*********"
+            android:background="@drawable/mobiletxtshape"
+            android:textSize="20sp"
+            android:inputType="phone" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textVe9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="@string/enter_password" />
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Password"
+            android:background="@drawable/txtshape"
+            android:textSize="20sp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtforgotpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#0F91FC"
+            android:textSize="18sp"
+            android:text="@string/forgot_pin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/btnshape"
+            android:text="@string/sign_in"
+            android:onClick="btnSignIn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#0F91FC"
+            android:textSize="18sp"
+            android:text="@string/for_help_call_03123456789" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

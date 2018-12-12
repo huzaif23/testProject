@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    tools:showIn="@layout/app_bar_driver_my_trips"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mangotech2.a123ngo.Driver_MyTrip">
+    <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/Trip_Container">
+
+        </RelativeLayout>
+        -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#aca9a9"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btntripshistory"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#979595"
+            android:text="Trips"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c7c4c4"/>
+        <Button
+            android:id="@+id/btnscheduledhistory"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#d7d4d4"
+            android:text="Scheduled"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/triphistory"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/tvnodrivertripfound"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ff0000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="No Trip Found"/>
+        </LinearLayout>
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/driver_my_trip_swiperefresh"
+            android:layout_width="match_parent"
+            app:srl_direction="bottom"
+            android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/List_Trips"
+            android:layout_height="wrap_content">
+        </ListView>
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/scheduledhistory"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tvnoscheduledfound"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ff0000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="No Scheduled Found"/>
+        </LinearLayout>
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/driverscheduled_my_trip_swiperefresh"
+            android:layout_width="match_parent"
+            app:srl_direction="bottom"
+            android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/List_Scheduled"
+            android:layout_height="wrap_content">
+        </ListView>
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

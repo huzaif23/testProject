@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">123nGO</string>
+    <string name="Reg">Registration</string>
+    <string name="vercode">4-digit verification code sent on your \nphone number</string>
+    <string name="veremail">email address</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_main">Home Main</string>
+    <string name="title_activity_driver_home">Driver Home</string>
+    <string name="BugMailId">sameer71095@gmail.com</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_pin">Forgot Password?</string>
+    <string name="for_help_call_03123456789">For Help, Call 03128641061</string>
+    <string name="drawer_home">Home</string>
+    <string name="drawer_my_trips">My Trips</string>
+    <string name="drawer_my_profile">My Profile</string>
+    <string name="drawer_get_free_rides">Get FREE Rides</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_language">Language</string>
+    <string name="drawer_contact_us">Contact us</string>
+    <string name="drawer_rates">Rates</string>
+    <string name="drawer_drive_with_us">Drive with Us</string>
+    <string name="drawer_help">Help</string>
+    <string name="drawer_sign_out">Sign Out</string>
+    <string name="next">Next</string>
+    <string name="promo_code">Promo code</string>
+    <string name="fare_estimate">Fare Estimate</string>
+    <string name="go_now">Go Now</string>
+    <string name="go_later">Go Later</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="re_type_new_password">Re-type new password</string>
+    <string name="change_password">Change Password</string>
+    <string name="contact_us">Contact us!</string>
+    <string name="call_us">Call us</string>
+    <string name="email_us">Email us</string>
+    <string name="make_busy">Make BUSY</string>
+    <string name="save_trip">Save Trip</string>
+
+
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_number_arrays">
+        <item>+92</item>
+    </string-array>
+
+    <string-array name="report">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Custom</item>
+    </string-array>
+
+
+</resources>

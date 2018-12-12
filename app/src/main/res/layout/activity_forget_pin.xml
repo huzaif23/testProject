@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context="com.example.mangotech2.a123ngo.ForgetPin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Spinner
+            android:id="@+id/spnforgetcountrycode"
+            android:layout_width="0dp"
+            android:ems="10"
+            android:layout_weight="2"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:background="@drawable/mobiledropshape"
+            android:textSize="20sp"
+            android:spinnerMode="dialog"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:entries="@array/country_number_arrays"
+            android:prompt="@string/country_prompt" />
+
+        <EditText
+            android:id="@+id/txtforgetmobile"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:layout_marginTop="5dp"
+            android:alpha="0.9"
+            android:background="@drawable/mobiletxtshape"
+            android:ems="10"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnchangepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnshape"
+            android:text="Forgot Password"
+            android:onClick="btnforgetpassword"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>
